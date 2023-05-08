@@ -5,11 +5,9 @@ import SettingScreen from './SettingScreen';
 import AutoScreen from './AutoScreen';
 import HomePage from './HomePage';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Header } from 'react-native-elements';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import styled from 'styled-components';
 
 
 const Tab = createBottomTabNavigator()
