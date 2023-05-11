@@ -3,6 +3,10 @@ import { View, Text, TouchableOpacity, Switch } from 'react-native'
 import { Button, Header } from "react-native-elements"
 import styles from '../../elements/style'
 import debounce from 'lodash/debounce';
+
+const AIO_KEY = '';
+const AIO_USERNAME = 'HarryHaha';
+
 const HomePage: React.FC =() =>{
     const [temperature, setTemperature] = useState(null);
     const [light, setLight] = useState(null);
@@ -12,7 +16,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/temp-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': AIO_KEY
             }
           })
           .then(response => response.json())
@@ -23,7 +27,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/light-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': AIO_KEY
             }
           })
           .then(response => response.json())
@@ -34,7 +38,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/humid-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': AIO_KEY
             }
           })
           .then(response => response.json())
