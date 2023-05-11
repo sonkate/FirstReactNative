@@ -12,7 +12,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/temp-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': 'aio_wHPt23RGoOQoK8MD32FJcfhbXWiS'
             }
           })
           .then(response => response.json())
@@ -23,7 +23,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/light-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': 'aio_wHPt23RGoOQoK8MD32FJcfhbXWiS'
             }
           })
           .then(response => response.json())
@@ -34,7 +34,7 @@ const HomePage: React.FC =() =>{
         fetch(`https://io.adafruit.com/api/v2/HarryHaha/feeds/humid-sensor/data/last`,
           {
             headers: {
-              'X-AIO-Key': 'aio_OepY02kt3vhaTPfCPadrdw7azvV7'
+              'X-AIO-Key': 'aio_wHPt23RGoOQoK8MD32FJcfhbXWiS'
             }
           })
           .then(response => response.json())
