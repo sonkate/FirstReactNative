@@ -4,7 +4,7 @@ import { Header } from "react-native-elements";
 import styles from '../../elements/style';
 
 
-const AIO_KEY = '';
+const AIO_KEY = 'aio_Mptp698oV7uAYedDlpA2p4wlew7n';
 const AIO_USERNAME = 'HarryHaha';
 
 const FEED_ID_FAN = 'button-fan';

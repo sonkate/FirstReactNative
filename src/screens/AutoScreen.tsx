@@ -5,7 +5,7 @@ import styles from '../../elements/style';
 import { set_value } from './SettingScreen';
 
 
-const AIO_KEY = '';
+const AIO_KEY = 'aio_Mptp698oV7uAYedDlpA2p4wlew7n';
 const AIO_USERNAME = 'HarryHaha';
 
 const FEED_ID_1 = 'auto1';
