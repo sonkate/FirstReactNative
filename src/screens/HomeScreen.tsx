@@ -4,6 +4,7 @@ import { Text, View } from 'react-native'
 import SettingScreen from './SettingScreen';
 import AutoScreen from './AutoScreen';
 import HomePage from './HomePage';
+import LoginScreen from './Login';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -14,8 +15,8 @@ const HomeScreen: React.FC = () => {
 
     <Tab.Navigator
       tabBarOptions={{
-        activeTintColor: 'rgb(253,201,0)', // Thiết lập màu sắc cho label và icon khi tab đang được chọn
-        inactiveTintColor: 'rgb(0,0,0)', // Thiết lập màu sắc cho label và icon khi tab không được chọn
+        activeTintColor: 'rgb(253,201,0)',
+        inactiveTintColor: 'rgb(0,0,0)',
       }}
     >
       <Tab.Screen
@@ -50,7 +51,16 @@ const HomeScreen: React.FC = () => {
         }}
         component={AutoScreen} />
 
+      {/* <Tab.Screen
+        name="Login"
+        options={{
+          tabBarLabel: 'Auto',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="auto-awesome-motion" color={color} size={size} />
+          ),
 
+        }}
+        component={LoginScreen} /> */}
 
     </Tab.Navigator>
   )

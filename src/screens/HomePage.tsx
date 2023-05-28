@@ -19,10 +19,6 @@ interface NameItem {
   humidity: number;
 }
 
-
-
-
-
 const HomePage: React.FC = () => {
   var arr_tem_light_humid = [0, 0, 0];
   const [db, setDb] = useState(SQLite.openDatabase('smarthome.db'));
@@ -168,24 +164,6 @@ const HomePage: React.FC = () => {
   };
 
 
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const [data, setData] = useState({
-    labels: labels,
-    datasets: [{
-      label: 'Expenses by Month',
-      data: [65, 59, 80, 81, 56, 55, 40],
-      backgroundColor: [
-        'rgb(153, 102, 255)'
-      ],
-      borderColor: [
-        'rgb(153, 102, 255)'
-      ],
-      borderWidth: 1
-    }]
-  });
-
-
-
   return (
     <View>
       <Header
@@ -194,7 +172,7 @@ const HomePage: React.FC = () => {
         barStyle="default"
         centerComponent={{
           text: "Smart Home",
-          style: { color: "#fff", fontSize: 20, paddingBottom: 5 }
+          style: { color: "#fff", fontSize: 20, padding: 10 }
         }}
         centerContainerStyle={{}}
         // leftComponent={{ icon: "menu", color: "#fff" }}
@@ -219,7 +197,6 @@ const HomePage: React.FC = () => {
         </TouchableOpacity>
 
         {/* chart here */}
-        <Demo />
         {/* {showDatas()} */}
       </View>
 
