@@ -80,6 +80,10 @@ const styles = StyleSheet.create({
   signupText: {
     color: '#003f5c',
   },
+  errorMessage: {
+    color: 'red',
+    marginTop: 10,
+  },
 
 });
 export default styles;

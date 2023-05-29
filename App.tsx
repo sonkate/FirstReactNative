@@ -15,22 +15,16 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <ThemeProvider>
-        {/* <NavigationContainer>
-          <HomeScreen />
-          <Stack.Screen name='Login' component={LoginScreen} />
-          <Stack.Screen name='Register' component={RegisterScreen} />
-          <StatusBar />
-        </NavigationContainer> */}
         <NavigationContainer>
-          <Stack.Navigator>
-            {/* <Stack.Screen name="Login" component={LoginScreen} options={{
-              headerShown: false,
-            }} /> */}
-            {/* <Stack.Screen name="Register" component={RegisterScreen} /> */}
-            <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+          <Stack.Navigator initialRouteName='Login'>
+            <Stack.Screen name='Login' component={LoginScreen} options={{ headerShown: false }} />
+            <Stack.Screen name='Register' component={RegisterScreen} />
+            <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
           </Stack.Navigator>
+        <StatusBar />
         </NavigationContainer>
       </ThemeProvider>
     </SafeAreaProvider>
+
   )
 }

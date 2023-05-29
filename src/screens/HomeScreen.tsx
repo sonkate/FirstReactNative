@@ -54,7 +54,7 @@ const HomeScreen: React.FC = () => {
       {/* <Tab.Screen
         name="Login"
         options={{
-          tabBarLabel: 'Auto',
+          tabBarLabel: 'Login',
           tabBarIcon: ({ color, size }) => (
             <Icon name="auto-awesome-motion" color={color} size={size} />
           ),
