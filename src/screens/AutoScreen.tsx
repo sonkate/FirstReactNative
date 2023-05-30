@@ -89,7 +89,7 @@ const AutoScreen: React.FC = () => {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={[styles.buttonStyle, { backgroundColor: newBackgroundColor3 }]} onPress={() => toggleSwitch3()}>
-                    <Text style={styles.text}>Turn on the light when there are peole in the room</Text>
+                    <Text style={styles.text}>Turn on the light when there are people in the room</Text>
                 </TouchableOpacity>
             </View>
         </View>
